@@ -1,0 +1,185 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "is_admin": true
+    },
+    {
+      "id": 2,
+      "username": "hrithik",
+      "password": "hrithik",
+      "is_admin": false
+    },
+    {
+      "id": 3,
+      "username": "arjun",
+      "password": "arjun",
+      "is_admin": false
+    },
+    {
+      "id": 4,
+      "username": "febin",
+      "password": "febin",
+      "is_admin": false
+    },
+    {
+      "id": 5,
+      "username": "angel",
+      "password": "angel",
+      "is_admin": false
+    },
+    {
+      "username": "alen",
+      "password": "alen",
+      "id": 6
+    },
+    {
+      "username": "abin",
+      "password": "abin",
+      "id": 7
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "project_name": "Project Alpha",
+      "description": "This is the first project.",
+      "instructions": "Please focus on creating a prototype for the user interface and share your ideas during the initial meeting.",
+      "admin_id": 1,
+      "deadline": "2023-08-15"
+    },
+    {
+      "id": 2,
+      "project_name": "Project Beta",
+      "description": "This is the second project.",
+      "instructions": "We need a detailed technical specification document before proceeding with the development.",
+      "admin_id": 1,
+      "deadline": "2023-09-30"
+    },
+    {
+      "id": 3,
+      "project_name": "Project Gamma",
+      "description": "This is the third project.",
+      "instructions": "The goal is to complete the backend development by the end of the month. Keep the team updated on the progress.",
+      "admin_id": 1,
+      "deadline": "2023-07-31"
+    },
+    {
+      "id": 4,
+      "project_name": "Project Delta",
+      "description": "This is the fourth project.",
+      "instructions": "Please ensure that all code is thoroughly tested before merging it into the main branch.",
+      "admin_id": 2,
+      "deadline": "2023-08-20"
+    },
+    {
+      "project_name": "Wac pro",
+      "teamLead": "2",
+      "members": [
+        "3",
+        "4",
+        "5"
+      ],
+      "description": "Promange toool",
+      "deadline": "2023-08-25",
+      "id": 5
+    }
+  ],
+  "members": [
+    {
+      "id": 1,
+      "project_id": 1,
+      "user_id": 2
+    },
+    {
+      "id": 2,
+      "project_id": 1,
+      "user_id": 3
+    },
+    {
+      "id": 3,
+      "project_id": 2,
+      "user_id": 3
+    },
+    {
+      "id": 4,
+      "project_id": 3,
+      "user_id": 4
+    },
+    {
+      "id": 5,
+      "project_id": 4,
+      "user_id": 5
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "task_description": "Complete project planning",
+      "assignee_id": 2,
+      "project_id": 1,
+      "priority": "Medium",
+      "status": "In Progress"
+    },
+    {
+      "id": 2,
+      "task_description": "Design user interface",
+      "assignee_id": 3,
+      "project_id": 1,
+      "priority": "High",
+      "status": "Not Started"
+    },
+    {
+      "id": 3,
+      "task_description": "Implement backend functionality",
+      "assignee_id": 3,
+      "project_id": 2,
+      "priority": "Low",
+      "status": "Completed"
+    },
+    {
+      "id": 4,
+      "task_description": "Write test cases",
+      "assignee_id": 4,
+      "project_id": 3,
+      "priority": "Medium",
+      "status": "In Progress"
+    },
+    {
+      "id": 5,
+      "task_description": "Deploy the application",
+      "assignee_id": 5,
+      "project_id": 4,
+      "priority": "High",
+      "status": "Not Started"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "project_id": 1,
+      "sender_id": 2,
+      "message": "Hey team, let's discuss the project's progress during our meeting tomorrow."
+    },
+    {
+      "id": 2,
+      "project_id": 1,
+      "sender_id": 3,
+      "message": "Sure, John! Looking forward to it."
+    },
+    {
+      "id": 3,
+      "project_id": 1,
+      "sender_id": 4,
+      "message": "I have some updates on the backend. Can I share them during the meeting?"
+    },
+    {
+      "id": 4,
+      "project_id": 1,
+      "sender_id": 2,
+      "message": "Absolutely, Michael! Please do."
+    }
+  ]
+}
